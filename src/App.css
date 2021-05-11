@@ -1,3 +1,4 @@
-.searched-data .item-data{
+.searched-data .item-data {
   display: flex;
+  background-color: pink;
 }
