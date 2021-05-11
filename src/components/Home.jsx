@@ -17,29 +17,31 @@ const Home = () =>{
       const keyword= urlParams.get('searchWord');
  
     return(
-        <div className="home-page">
+        <React.Fragment>
+            <div className="home-page">
 
-            <h1>High-Tech Deals</h1>
-            <form>
-                <input type="text" name="searchWord" value={state.searchWord} onChange={handleChange} required />
-                <button type="submit"> Search</button>
-            </form>
+                <h1>High-Tech Deals</h1>
+                <form>
+                    <input type="text" name="searchWord" value={state.searchWord} onChange={handleChange} required />
+                    <button type="submit"> Search</button>
+                </form>
+            </div>
+
             {keyword === '' && ''}
-            
-            {keyword &&  
-                <div>
-                    <p>Searching for {keyword}</p>
-                </div>
                 
-            }
-            {keyword && 
-                <div className="searched-data">
-                    <ShowData/>
-                </div>
-            }   
-           
+                {keyword &&  
+                    <div className="search-for">
+                        <p>Searching for {keyword}</p>
+                    </div>
+                    
+                }
+                {keyword && 
+                    <div className="searched-data">
+                        <ShowData/>
+                    </div>
+                }   
             
-        </div>
+        </React.Fragment>
     );
 }
 
