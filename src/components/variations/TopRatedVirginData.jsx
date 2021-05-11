@@ -50,7 +50,7 @@ const TopRatedVirginData =  ({title}) => {
         return (
             <div className="virgin-data">
 
-               <h1>Virgin Items</h1>
+               <h1>Virgin MegaStore</h1>
                {gotVirginData && gotVirginData.map(vData => {
                    const{virginImg,virginLink,virginName,virginPrice} =vData;
 
