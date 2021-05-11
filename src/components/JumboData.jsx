@@ -1,0 +1,77 @@
+import rp from "request-promise";
+import cheerio from 'cheerio';
+import React, { useEffect, useState} from 'react';
+
+
+
+const JumboData =  ({title}) => {
+
+     const [gotjumboData, getjumboData] = useState([]);
+
+    useEffect(()=>{
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const keyword= urlParams.get('searchWord');
+        var final_jumbo_url = "https://cors-anywhere.herokuapp.com/https://www.jumbo.ae/home/search?q="+keyword;
+        rp(final_jumbo_url).then(html => {
+            let jumboData = [];
+            let $ = cheerio.load(html);
+
+            const jumboField = $('#search-result-items');
+
+            jumboField.find('.clearfix').each((i,element) =>{
+                const $element= $(element);
+
+
+                var jumboItemLink = $element.find('a').attr('href');
+                var finaljumboItemLink = "https://www.jumbo.ae/"+jumboItemLink;
+
+                var jumboItemImg = $element.find('img').attr('src');
+
+                var jumboItemName = $element.find('.variant-title').text().replace(/,/g,'' );
+                
+
+                var jumboItemPrice = $element.find('.variant-final-price').text().replace(/ |\n /g,'');
+                
+                jumboData.push({
+                    jumboLink:finaljumboItemLink,
+                    jumboImg: jumboItemImg,
+                    jumboName: jumboItemName,
+                    jumboPrice:jumboItemPrice
+                });
+            });
+            
+            getjumboData(jumboData);
+           
+        });  
+    },[])
+
+        return (
+            <div className="jumbo-data">
+               <h1>jumbo Items</h1>
+               {gotjumboData && gotjumboData.map(vData => {
+                   const{jumboImg,jumboLink,jumboName,jumboPrice} =vData;
+
+                   return(
+                        <>
+                           <div className="jumbo-data jumbo-item">
+                                <a href={jumboLink}>
+                                    <img src={jumboImg} alt="#"></img>
+                                    <div className="jumbo-data jumbo-item details">
+                                        <h2>{jumboName}</h2>
+                                        <p>{jumboPrice}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </>
+                   );
+               })}
+                
+            </div>
+        );
+    
+}
+
+
+export default JumboData;
+
