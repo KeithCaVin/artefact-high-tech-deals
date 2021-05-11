@@ -2,7 +2,7 @@
   "name": "artefact-high-tech-deals",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://KeithCaVin.github.io/artefact-high-tech-deals",
+  "homepage": "https://keithcavin.github.io/artefact-high-tech-deals",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
