@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import ShowData from './ShowData';
-
+import Logo from '../assets/logo.png';
 const Home = () =>{
     const [state, setState] = useState({
         searchWord:""
@@ -19,7 +19,9 @@ const Home = () =>{
     return(
         <React.Fragment>
             <div className="home-page">
-
+                <div className="page-logo">
+                   <img src={Logo} alt="logo"/>
+                </div>
                 <h1>High-Tech Deals</h1>
                 <form>
                     <input type="text" name="searchWord" value={state.searchWord} onChange={handleChange} required />
