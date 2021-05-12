@@ -29,12 +29,6 @@ const Home = () =>{
 
             {keyword === '' && ''}
                 
-                {keyword &&  
-                    <div className="search-for">
-                        <p>Searching for {keyword}</p>
-                    </div>
-                    
-                }
                 {keyword && 
                     <div className="searched-data">
                         <ShowData/>
