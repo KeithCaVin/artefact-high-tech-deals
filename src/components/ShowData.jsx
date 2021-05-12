@@ -9,13 +9,44 @@ import RecommendedAmazonData from './variations/RecommendedAmazonData';
 
 const ShowData = () => {
     const [active, setActive] = useState("featured");
-
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const keyword= urlParams.get('searchWord');
     return(
         <React.Fragment>
-            <button onClick={() => setActive("featured")}>Featured</button>
-            <button onClick={() => setActive("top_rated")}>Top Rated</button>
-            <button onClick={() => setActive("recommended")}>Recommended</button>
+            <div className="button-features">
+                <button onClick={() => setActive("featured")} className="featured-btn">Featured</button>
+                <button onClick={() => setActive("top_rated")} className="top-rated-btn">Top Rated</button>
+                <button onClick={() => setActive("recommended")} className="recommended-btn">Recommended</button>
+            </div>
             
+            {active === "featured" && 
+                <> 
+                    {keyword &&  
+                        <div className="search-for">
+                            <p>Searching for {keyword} - {active}</p>
+                        </div>
+                    }
+                </>
+            }
+             {active === "top_rated" && 
+                <> 
+                    {keyword &&  
+                        <div className="search-for">
+                            <p>Searching for {keyword} - {active}</p>
+                        </div>
+                    }
+                </>
+            }
+             {active === "recommended" && 
+                <> 
+                    {keyword &&  
+                        <div className="search-for">
+                            <p>Searching for {keyword} - {active}</p>
+                        </div>
+                    }
+                </>
+            }
             <div className="item-data">
                 {active === "featured" && 
                 <> 
