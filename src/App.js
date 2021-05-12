@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="page">
 
         <Route component={Home} path="/artefact-high-tech-deals" exact/>
         <Route component={ShowData} path="/result"/> 
