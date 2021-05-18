@@ -1,1 +1,61 @@
 //dashboard elements
+//dashboard elements
+.item-data {
+  display: flex;
+  justify-content: center;
+}
+.amazon-data {
+  max-width: 33%;
+  margin: 0 5%;
+
+  p {
+    width: 20vw;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+  }
+}
+
+.virgin-data {
+  max-width: 33%;
+  margin: 0 5%;
+
+  p {
+    width: 20vw;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+  }
+}
+
+.jumbo-data {
+  max-width: 33%;
+  margin: 0 5%;
+
+  p {
+    width: 20vw;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  width: 20vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+}
+
+.search-for {
+  margin-left: 2vw;
+}

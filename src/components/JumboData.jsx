@@ -48,7 +48,7 @@ const JumboData =  ({title}) => {
 
         return (
             <div className="jumbo-data">
-               <h1>jumbo Items</h1>
+               <h1>Jumbo Items</h1>
                {gotjumboData && gotjumboData.map(vData => {
                    const{jumboImg,jumboLink,jumboName,jumboPrice} =vData;
 
