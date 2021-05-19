@@ -1,1 +1,58 @@
 //Logo, search bar, blue bar, filter buttons
+.home-page {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 4em;
+}
+.page-logo {
+  max-width: 20%;
+}
+.htd-logo {
+  height: 90%;
+  width: 100%;
+  padding-top: 0.8%;
+}
+.form-container {
+  padding: 3%;
+  width: 100%;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+input {
+  border-radius: 20px;
+  width: 30em;
+  height: 2em;
+  margin-left: 15%;
+  padding-right: 10%;
+  padding-left: 1em;
+  border-color: $techblue;
+  font-family: "Manrope", sans-serif;
+}
+.search-btn {
+  border-radius: 20px;
+  width: 10em;
+  height: 2.4em;
+  border: none;
+  background-color: $techblue;
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+
+.button-features {
+  padding: 4vh;
+  background-color: $techblue;
+
+  button {
+    margin-left: 0;
+    margin-right: 2vw;
+    border-radius: 20px;
+    height: 5vh;
+    width: 10vw;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+  }
+}

@@ -20,12 +20,12 @@ const Home = () =>{
         <React.Fragment>
             <div className="home-page">
                 <div className="page-logo">
-                   <img src={Logo} alt="logo"/>
+                   <img class="htd-logo" src={Logo} alt="logo"/>
                 </div>
                 <h1>High-Tech Deals</h1>
                 <form>
-                    <input type="text" name="searchWord" value={state.searchWord} onChange={handleChange} required />
-                    <button type="submit"> Search</button>
+                    <input type="text" name="searchWord" placeholder="Search for a product" value={state.searchWord} onChange={handleChange} required />
+                    <button class="search-btn" type="submit"> Search</button>
                 </form>
             </div>
 
