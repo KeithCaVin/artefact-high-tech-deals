@@ -24,7 +24,7 @@ const ShowData = () => {
                 <> 
                     {keyword &&  
                         <div className="search-for">
-                            <p>Searching for {keyword} - {active}</p>
+                            <p>Searching for {keyword} - Featured</p>
                         </div>
                     }
                 </>
@@ -33,7 +33,7 @@ const ShowData = () => {
                 <> 
                     {keyword &&  
                         <div className="search-for">
-                            <p>Searching for {keyword} - {active}</p>
+                            <p>Searching for {keyword} - Top Rated</p>
                         </div>
                     }
                 </>
@@ -42,7 +42,7 @@ const ShowData = () => {
                 <> 
                     {keyword &&  
                         <div className="search-for">
-                            <p>Searching for {keyword} - {active}</p>
+                            <p>Searching for {keyword} - Recommended</p>
                         </div>
                     }
                 </>
