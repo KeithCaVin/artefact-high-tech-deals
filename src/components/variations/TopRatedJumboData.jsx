@@ -49,27 +49,29 @@ const TopRatedJumboData =  ({title}) => {
     },[])
 
         return (
-            <div className="jumbo-data">
-               <h1>Jumbo Items</h1>
-               {gotjumboData && gotjumboData.map(vData => {
-                   const{jumboImg,jumboLink,jumboName,jumboPrice} =vData;
+            <React.Fragment>
+                <div className="jumbo-data">
+                <h1>Jumbo Items</h1>
+                {gotjumboData && gotjumboData.map(vData => {
+                    const{jumboImg,jumboLink,jumboName,jumboPrice} =vData;
 
-                   return(
-                        <>
-                           <div className="jumbo-data jumbo-item">
-                                <a href={jumboLink}>
-                                    <img src={jumboImg} alt="#"></img>
-                                    <div className="jumbo-data jumbo-item details">
-                                        <h2>{jumboName}</h2>
-                                        <p>{jumboPrice}</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </>
-                   );
-               })}
-                
-            </div>
+                    return(
+                            <>
+                            <div className="jumbo-data jumbo-item">
+                                    <a href={jumboLink}>
+                                        <img src={jumboImg} alt="#"></img>
+                                        
+                                            <h2>{jumboName}</h2>
+                                            <p>{jumboPrice}</p>
+                                       
+                                    </a>
+                                </div>
+                            </>
+                    );
+                })}
+                    
+                </div>
+            </React.Fragment>
         );
     
 }

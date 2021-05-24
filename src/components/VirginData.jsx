@@ -47,28 +47,30 @@ const VirginData =  ({title}) => {
     },[])
 
         return (
-            <div className="virgin-data">
+            <React.Fragment>
+                <div className="virgin-data">
 
-               <h1>Virgin Megastore</h1>
-               {gotVirginData && gotVirginData.map(vData => {
-                   const{virginImg,virginLink,virginName,virginPrice} =vData;
+                <h1>Virgin Megastore</h1>
+                {gotVirginData && gotVirginData.map(vData => {
+                    const{virginImg,virginLink,virginName,virginPrice} =vData;
 
-                   return(
-                        <>
-                           <div className="virgin-data virgin-item">
-                                <a href={virginLink}>
-                                    <img src={virginImg} alt="#"></img>
-                                    <div className="virgin-data virgin-item details">
-                                        <h2>{virginName}</h2>
-                                        <p>{virginPrice}</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </>
-                   );
-               })}
-                
-            </div>
+                    return(
+                            <>
+                            <div className="virgin-data virgin-item">
+                                    <a href={virginLink}>
+                                        <img src={virginImg} alt="#"></img>
+                                        
+                                            <h2>{virginName}</h2>
+                                            <p>{virginPrice}</p>
+                                        
+                                    </a>
+                                </div>
+                            </>
+                    );
+                })}
+                    
+                </div>
+            </React.Fragment>
         );
     
 }

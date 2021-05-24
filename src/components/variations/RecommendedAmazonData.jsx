@@ -48,32 +48,34 @@ const RecommendedAmazonData =  ({title}) => {
     },[])
 
         return (
-            <div className="amazon-data">
-           
-               <h1>Amazon Items</h1>
-               {gotAmazonData && gotAmazonData.map(aData => {
-                   const{amazonImg,amazonLink,amazonName,amazonPrice} =aData;
-                   
+            <React.Fragment>
+                <div className="amazon-data">
+            
+                <h1>Amazon Items</h1>
+                {gotAmazonData && gotAmazonData.map(aData => {
+                    const{amazonImg,amazonLink,amazonName,amazonPrice} =aData;
+                    
 
-                    if(amazonLink === "https://www.amazon.aejavascript:void(0)"){
-                        return("");
-                    }
-                   return(
-                        <>
-                            <div className="amazon-data amazon-item">
-                                <a href={amazonLink}>
-                                    <img src={amazonImg} alt="#"></img>
-                                    <div className="amazon-data amazon-item details">
-                                    <h2>{amazonName}</h2>
-                                    <p>AED {amazonPrice}.00</p>
-                                    </div> 
-                                </a>
-                            </div>
-                        </>
-                   );
-               })}
-                
-            </div>
+                        if(amazonLink === "https://www.amazon.aejavascript:void(0)"){
+                            return("");
+                        }
+                    return(
+                            <>
+                                <div className="amazon-data amazon-item">
+                                    <a href={amazonLink}>
+                                        <img src={amazonImg} alt="#"></img>
+                                       
+                                        <h2>{amazonName}</h2>
+                                        <p>AED {amazonPrice}.00</p>
+                                       
+                                    </a>
+                                </div>
+                            </>
+                    );
+                })}
+                    
+                </div>
+            </React.Fragment>
         );
     
 }
