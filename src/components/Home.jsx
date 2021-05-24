@@ -35,9 +35,12 @@ const Home = () =>{
 
             {queryString === '' && 
                 <div className="ecommerce-logos">
-                    <img className="amazon-logo" src={AmazonLogo} alt="Amazon Logo"/>
-                    <img className="virgin-logo" src={VirginMegastoreLogo} alt="Virgin Megastore Logo"/>
-                    <img className="jumbo-logo" src={JumboLogo} alt="Jumbo Logo"/>
+                    <h1 className="home-message">Compare and Get the best deals from these amazing stores!</h1>
+                    <div className="store-logos">
+                        <img className="amazon-logo" src={AmazonLogo} alt="Amazon Logo"/>
+                        <img className="virgin-logo" src={VirginMegastoreLogo} alt="Virgin Megastore Logo"/>
+                        <img className="jumbo-logo" src={JumboLogo} alt="Jumbo Logo"/>
+                    </div>
                 </div>
             }
                 

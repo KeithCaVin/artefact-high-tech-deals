@@ -1,4 +1,42 @@
 //dashboard elements
+.ecommerce-logos {
+  display: block;
+  justify-content: center;
+  text-align: center;
+
+  .home-message {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 4%;
+  }
+
+  .store-logos {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    margin: 10vh 5vw 0vh;
+    border-radius: 50px;
+  }
+
+  .amazon-logo {
+    max-width: 25vw;
+    max-height: 30vh;
+  }
+
+  .virgin-logo {
+    max-width: 25vw;
+    max-height: 30vh;
+  }
+
+  .jumbo-logo {
+    max-width: 25vw;
+    max-height: 30vh;
+  }
+}
 //dashboard elements
 .item-data {
   display: flex;
