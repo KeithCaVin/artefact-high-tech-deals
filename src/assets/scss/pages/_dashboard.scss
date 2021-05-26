@@ -43,8 +43,17 @@
   justify-content: center;
 }
 .amazon-data {
-  max-width: 33%;
+  max-height: 800px;
+  overflow-y: scroll;
+  width: 33%;
   margin: 0 5%;
+  overflow-x: hidden;
+
+  .amazon-item{
+    min-height: 400px;
+    overflow-y: visible;
+    width: 100%;
+  }
   
   p {
     width: 20vw;
@@ -55,8 +64,17 @@
 }
 
 .virgin-data {
-  max-width: 33%;
+  max-height: 800px;
+  overflow-y: scroll;
+  width: 33%;
   margin: 0 5%;
+  overflow-x: hidden;
+
+  .virgin-item{
+    min-height: 400px;
+    overflow-y: visible;
+    width: 100%;
+  }
 
   p {
     width: 20vw;
@@ -67,8 +85,17 @@
 }
 
 .jumbo-data {
-  max-width: 33%;
+  max-height: 800px;
+  overflow-y: scroll;
+  width: 33%;
   margin: 0 5%;
+  overflow-x: hidden;
+
+  .jumbo-item{
+    min-height: 400px;
+    overflow-y: visible;
+    width: 100%;
+  }
 
   p {
     width: 20vw;
