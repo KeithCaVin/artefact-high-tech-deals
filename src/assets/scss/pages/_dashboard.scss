@@ -69,6 +69,7 @@
   width: 33%;
   margin: 0 5%;
   overflow-x: hidden;
+  
 
   .virgin-item{
     min-height: 400px;
@@ -96,6 +97,7 @@
     overflow-y: visible;
     width: 100%;
   }
+  
 
   p {
     width: 20vw;
@@ -124,3 +126,23 @@ h2 {
 .search-for {
   margin-left: 2vw;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: $techblue; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
