@@ -6,7 +6,8 @@
   height: 4em;
 }
 .page-logo {
-  max-width: 20%;
+  max-width: 15%;
+  
 }
 .htd-logo {
   height: 90%;
@@ -23,36 +24,43 @@ form {
 }
 input {
   border-radius: 20px;
-  width: 30em;
-  height: 2em;
-  margin-left: 15%;
+  width: 68em;
+  height: 3em;
+  margin-left: 250px;
   padding-right: 10%;
   padding-left: 1em;
   border-color: $techblue;
   font-family: "Manrope", sans-serif;
+  
 }
 .search-btn {
   border-radius: 20px;
-  width: 10em;
-  height: 2.4em;
+  width: 15em;
+  height: 3.4em;
   border: none;
   background-color: $techblue;
   color: white;
   font-family: "Manrope", sans-serif;
+  margin-left: -179px;
 }
 
 .button-features {
-  padding: 4vh;
+  padding: 3vh;
   background-color: $techblue;
+  
 
   button {
     margin-left: 0;
     margin-right: 2vw;
-    border-radius: 20px;
-    height: 5vh;
-    width: 10vw;
+    border-radius: 50px;
+    height: 4vh;
+    width: 8vw;
     border: none;
     font-family: "Manrope", sans-serif;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 14px;
+    
+    
   }
+  
 }
