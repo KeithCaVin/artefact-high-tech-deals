@@ -6,6 +6,7 @@ import Logo from '../assets/logo.png';
 import AmazonLogo from '../assets/amazonlogo.png';
 import VirginMegastoreLogo from '../assets/virginlogo.png';
 import JumboLogo from '../assets/jumbologo.png';
+import AxiomLogo from '../assets/axiomlogo.jpg';
 const Home = () =>{
     const [state, setState] = useState({
         searchWord:""
@@ -39,7 +40,7 @@ const Home = () =>{
                     <div className="store-logos">
                         <img className="amazon-logo" src={AmazonLogo} alt="Amazon Logo"/>
                         <img className="virgin-logo" src={VirginMegastoreLogo} alt="Virgin Megastore Logo"/>
-                        <img className="jumbo-logo" src={JumboLogo} alt="Jumbo Logo"/>
+                        <img className="axiom-logo" src={AxiomLogo} alt="Axiom Logo"/>
                     </div>
                 </div>
             }

@@ -28,6 +28,7 @@ const TopRatedVirginData =  ({title}) => {
                 var finalVirginItemLink = "https://www.virginmegastore.ae"+virginItemLink;
 
                 var virginItemImg = $element.find('img').attr('src');
+                var virginItemImgFinal = "https://www.virginmegastore.ae" + virginItemImg;
 
                 var virginItemName = $element.find('.product-list__name.name.no-decoration.d-inline-block').text();
 
@@ -35,7 +36,7 @@ const TopRatedVirginData =  ({title}) => {
                 
                 virginData.push({
                     virginLink:finalVirginItemLink,
-                    virginImg: virginItemImg,
+                    virginImg: virginItemImgFinal,
                     virginName: virginItemName,
                     virginPrice:virginItemPrice
                 });
@@ -51,7 +52,7 @@ const TopRatedVirginData =  ({title}) => {
             <React.Fragment>
                 <div className="virgin-data">
 
-                <h1>Virgin Mega store</h1>
+                <h1>Virgin Megastore</h1>
                 {gotVirginData && gotVirginData.map(vData => {
                     const{virginImg,virginLink,virginName,virginPrice} =vData;
 

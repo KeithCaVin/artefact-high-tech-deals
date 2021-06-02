@@ -32,9 +32,10 @@
     max-height: 30vh;
   }
 
-  .jumbo-logo {
-    max-width: 25vw;
-    max-height: 30vh;
+  .axiom-logo {
+    max-width: 35vw;
+    max-height: 40vh;
+    margin-top: 0px;
   }
 }
 //dashboard elements
@@ -85,17 +86,18 @@
   }
 }
 
-.jumbo-data {
+.axiom-data {
   max-height: 800px;
   overflow-y: scroll;
   width: 33%;
   margin: 0 5%;
   overflow-x: hidden;
 
-  .jumbo-item{
+  .axiom-item{
     min-height: 400px;
     overflow-y: visible;
     width: 100%;
+    
   }
   
 

@@ -26,15 +26,16 @@ const VirginData =  ({title}) => {
                 var virginItemLink = $element.find('a').attr('href');
                 var finalVirginItemLink = "https://www.virginmegastore.ae"+virginItemLink;
 
-                var virginItemImg = $element.find('img').attr('src');
-
+                var virginItemImg = $element.find('img').attr('src');   
+                var virginItemImgFinal = "https://www.virginmegastore.ae" + virginItemImg;
+                
                 var virginItemName = $element.find('.product-list__name.name.no-decoration.d-inline-block').text();
 
                 var virginItemPrice = $element.find('.price__value').text().replace(/ |\n /g,'');
                 
                 virginData.push({
                     virginLink:finalVirginItemLink,
-                    virginImg: virginItemImg,
+                    virginImg: virginItemImgFinal,
                     virginName: virginItemName,
                     virginPrice:virginItemPrice
                 });
@@ -42,6 +43,7 @@ const VirginData =  ({title}) => {
             });
             
             getVirginData(virginData);
+           
            
         });  
     },[])

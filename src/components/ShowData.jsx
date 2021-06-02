@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import AmazonData from './AmazonData';
 import VirginData from './VirginData';
-import JumboData from './JumboData';
+import AxiomData from './AxiomData';
+
 import TopRatedAmazonData from './variations/TopRatedAmazonData';
 import TopRatedVirginData from './variations/TopRatedVirginData';
-import TopRatedJumboData from './variations/TopRatedJumboData';
+
 import RecommendedAmazonData from './variations/RecommendedAmazonData';
 
 const ShowData = () => {
     const [active, setActive] = useState("featured");
+    
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const keyword= urlParams.get('searchWord');
@@ -52,21 +54,24 @@ const ShowData = () => {
                 <> 
                     <AmazonData title="featured"/>
                     <VirginData title="featured"/>
-                    <JumboData title="featured"/>
+                   
+                    <AxiomData title="featured"/>
                 </>}
 
                 {active === "top_rated" && 
                 <> 
                     <TopRatedAmazonData title="top_rated"/>
                     <TopRatedVirginData title="top_rated"/>
-                    <TopRatedJumboData title="top_rated"/>
+                    {/* <TopRatedJumboData title="top_rated"/> */}
+                    <AxiomData title="featured"/>
                 </>}
 
                 {active === "recommended" && 
                 <> 
                     <RecommendedAmazonData title="recommended"/>
                     <VirginData title="recommended"/>
-                    <JumboData title="recommended"/>
+                    {/* <JumboData title="recommended"/> */}
+                    <AxiomData title="featured"/>
                 </>}
                 
             </div>
