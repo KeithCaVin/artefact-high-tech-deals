@@ -42,8 +42,9 @@ const AmazonData =  ({title}) => {
             });
             
             getAmazonData(data);
-           
-        });  
+            
+        });
+    
     },[])
 
         return (
