@@ -27,7 +27,7 @@ const VirginData =  ({title}) => {
                 var finalVirginItemLink = "https://www.virginmegastore.ae"+virginItemLink;
 
                 var virginItemImg = $element.find('img').attr('src');   
-                var virginItemImgFinal = "https://www.virginmegastore.ae" + virginItemImg;
+     
                 
                 var virginItemName = $element.find('.product-list__name.name.no-decoration.d-inline-block').text();
 
@@ -35,7 +35,7 @@ const VirginData =  ({title}) => {
                 
                 virginData.push({
                     virginLink:finalVirginItemLink,
-                    virginImg: virginItemImgFinal,
+                    virginImg: virginItemImg,
                     virginName: virginItemName,
                     virginPrice:virginItemPrice
                 });
