@@ -7,26 +7,25 @@
 }
 .page-logo {
   max-width: 15%;
-  
+  display: flex;
 }
 .htd-logo {
   height: 90%;
   width: 100%;
   padding-top: 0.8%;
 }
-.form-container {
-  padding: 3%;
-  width: 100%;
-}
+
 form {
+  margin-left: 300px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
 }
 input {
   border-radius: 20px;
-  width: 68em;
+  width: 35em;
   height: 3em;
-  margin-left: 250px;
+
   padding-right: 10%;
   padding-left: 1em;
   border-color: $techblue;
@@ -38,10 +37,10 @@ input {
   width: 15em;
   height: 3.4em;
   border: none;
+  margin-left: 20px;
   background-color: $techblue;
-  color: white;
+  color: white; 
   font-family: "Manrope", sans-serif;
-  margin-left: -179px;
 }
 
 .button-features {
@@ -64,3 +63,44 @@ input {
   }
   
 }
+
+//Loading animation
+.lds-dual-ring {
+  left: 1%;
+  top: 8%;
+  // width: 210px;
+  // height: 210px;
+  height:90vh;
+  width: 98vw;
+  z-index: 100;
+
+  border-radius: 5px;
+  position: absolute;
+  
+  background-color: rgba(244, 240, 240, 0.3);
+}
+.lds-dual-ring:after {
+  position: relative;
+  content: " ";
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+  border-radius: 50%;
+  border: 15px solid black;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    opacity: 0.9;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 0.9;
+    transform: rotate(360deg);
+  }
+}
+
