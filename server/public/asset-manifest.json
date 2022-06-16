@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.83fb5bf8.chunk.css",
+    "main.js": "./static/js/main.c01810fa.chunk.js",
+    "main.js.map": "./static/js/main.c01810fa.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.a6165e54.js",
+    "runtime-main.js.map": "./static/js/runtime-main.a6165e54.js.map",
+    "static/js/2.656e751e.chunk.js": "./static/js/2.656e751e.chunk.js",
+    "static/js/2.656e751e.chunk.js.map": "./static/js/2.656e751e.chunk.js.map",
+    "static/js/3.e25fe268.chunk.js": "./static/js/3.e25fe268.chunk.js",
+    "static/js/3.e25fe268.chunk.js.map": "./static/js/3.e25fe268.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.83fb5bf8.chunk.css.map": "./static/css/main.83fb5bf8.chunk.css.map",
+    "static/js/2.656e751e.chunk.js.LICENSE.txt": "./static/js/2.656e751e.chunk.js.LICENSE.txt",
+    "static/media/amazonlogo.7fe12f5c.png": "./static/media/amazonlogo.7fe12f5c.png",
+    "static/media/axiomlogo.08fe225e.jpg": "./static/media/axiomlogo.08fe225e.jpg",
+    "static/media/logo.4b3e54df.png": "./static/media/logo.4b3e54df.png",
+    "static/media/virginlogo.98929dc8.png": "./static/media/virginlogo.98929dc8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6165e54.js",
+    "static/js/2.656e751e.chunk.js",
+    "static/css/main.83fb5bf8.chunk.css",
+    "static/js/main.c01810fa.chunk.js"
+  ]
+}
