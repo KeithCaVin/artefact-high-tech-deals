@@ -1,17 +1,14 @@
 import './style.scss';
-import ShowData from './components/ShowData';
 import Home from './components/Home';
 import {BrowserRouter as Router, Route} from "react-router-dom"; 
 
 function App() {
   return (
-    <Router>
+    <Router basename='/high-tech-deals'>
       <div className="page">
 
-        <Route component={Home} path="/artefact-high-tech-deals" exact/>
-        <Route component={ShowData} path="/result"/> 
-    
-          
+        <Route component={Home} path="/" exact/>
+
       </div>
   </Router>
   );
