@@ -4,10 +4,10 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basename='/high-tech-deals'>
       <div className="page">
 
-        <Route component={Home} path="/artefact-high-tech-deals" exact/>
+        <Route component={Home} path="/" exact/>
 
       </div>
   </Router>

@@ -8,21 +8,6 @@ import AxiomLogo from '../assets/axiomlogo.jpg';
 
 const Home = () =>{
 
-    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-    next task:
-    fix the variations
-    fix the style
-    
-    
-    
-    
-    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    */
     const [state, setState] = useState({searchWord:""});
     const [confirm, setConfirm] = useState(false);
     const [loading, setLoading] = useState(false);
