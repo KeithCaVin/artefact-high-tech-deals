@@ -37,7 +37,7 @@ const Home = () =>{
                 setLoading(true);
                 setX(1);
             }
-            await Axios.get("http://localhost:3005/get_items", {params: {word: keyword.searchWord}}).then((response) => {
+            await Axios.get("/get_items", {params: {word: keyword.searchWord}}).then((response) => {
                
                 setList(response.data);
               

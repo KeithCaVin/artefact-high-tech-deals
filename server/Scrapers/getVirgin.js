@@ -18,8 +18,11 @@ export const scrapeVirgin = async(keyword) =>
 		var finalVirginItemLink = "https://www.virginmegastore.ae"+virginItemLink;
 		var virginItemImg = "https://www.virginmegastore.ae" + $element.find('img').attr('src');   
 		var virginItemName = $element.find('.product-list__name.name.no-decoration.d-inline-block').text();
-		var virginItemPrice = $element.find('.price__value').text().replace(/ |\n /g,'');
 		
+		if ($element.find('.product-list__price-container.d-flex.justify--space-between').children().length === 1)
+			var virginItemPrice = $element.find('.price__value').text().replace(/ |\n /g,'');
+		else
+			var virginItemPrice = $element.find('.product-list__price-container.d-flex.justify--space-between').children().first().text().replace(/ |\n /g,'');
 		virginData.push({
 			virginLink:finalVirginItemLink,
 			virginImg: virginItemImg,

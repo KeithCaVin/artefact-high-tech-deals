@@ -15,8 +15,6 @@ const __dirname = dirname(__filename);
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static('public'));
-
 
 app.get("/get_items", async (req, res) =>{
 	let amazonData = [];
@@ -30,11 +28,17 @@ app.get("/get_items", async (req, res) =>{
 
 });
 
+
+app.use(express.static('public'));
+
 app.get('*', function (req, res) {
-	res.send(res.sendFile(path.join(__dirname, '/public', 'index.html')));
-  });
+	res.send(res.sendFile(path.join(__dirname, 'public', 'index.html')));
+});
 
 
-app.listen(process.env.PORT || 3005, () =>{
+
+app.set('port', (process.env.PORT || 3005));
+
+app.listen(app.get('port'), () =>{
 	console.log("Server is running in port 3005");
 })
